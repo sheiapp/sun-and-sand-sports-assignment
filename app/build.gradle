@@ -62,11 +62,11 @@ dependencies {
     implementation deps.pagination.paging
     testImplementation deps.kotlin.test
     testImplementation deps.junit
+    testImplementation deps.mockito_core
+    testImplementation deps.google_truth
+    testImplementation deps.turbine
     testImplementation deps.androidx_test
     testImplementation deps.coroutines.coroutinesTest
     androidTestImplementation deps.atsl.ext_junit
     androidTestImplementation deps.espresso.core
-    testImplementation 'org.mockito:mockito-core:4.0.0'
-    testImplementation "com.google.truth:truth:1.1.3"
-    testImplementation 'app.cash.turbine:turbine:0.7.0'
 }
