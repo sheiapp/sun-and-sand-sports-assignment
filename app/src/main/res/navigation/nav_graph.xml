@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/RandomUserListFragment">
+
+    <fragment
+        android:id="@+id/RandomUserListFragment"
+        android:name="com.sunandsandsports.assignment.ui.random_user_ui.main_screen.RandomUserListFragment"
+        android:label="fragment_main_screen"
+        tools:layout="@layout/fragment_random_user_list">
+        <action
+            android:id="@+id/action_mainScreenFragment_to_detailScreenFragment"
+            app:destination="@id/RandomUserDetailFragment"
+            app:launchSingleTop="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/RandomUserDetailFragment"
+        android:name="com.sunandsandsports.assignment.ui.random_user_ui.detail_screen.RandomUserDetailFragment"
+        android:label="fragment_detail_screen"
+        tools:layout="@layout/fragment_random_user_detail"/>
+</navigation>

@@ -1,0 +1,72 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'androidx.navigation.safeargs'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+    id 'kotlin-parcelize'
+}
+
+android {
+    compileSdk build_versions.compile_sdk
+    buildFeatures {
+        viewBinding true
+    }
+
+    defaultConfig {
+        applicationId "com.sunandsandsports.assignment"
+        minSdk build_versions.min_sdk
+        targetSdk build_versions.target_sdk
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRnner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation deps.core_ktx
+    implementation deps.app_compat
+    implementation deps.material
+    implementation deps.constraint_layout
+    implementation deps.androidx_legacy
+    implementation deps.navigation.fragment_ktx
+    implementation deps.navigation.ui_ktx
+    implementation deps.hilt.androidHilt
+    kapt deps.hilt.androidCompiler
+    kapt deps.hilt.hiltCompiler
+    implementation deps.lifecycle.viewModel
+    implementation deps.lifecycle.runTimeKtx
+    implementation deps.lifecycle.livedata
+    implementation deps.coroutines.android
+    implementation deps.coroutines.retrofitAdapter
+    implementation deps.retrofit.retrofit2
+    implementation deps.retrofit.converter
+    implementation deps.loggingInterceptor.logging
+    implementation deps.bumpTech.glide
+    kapt deps.bumpTech.glideCompiler
+    implementation deps.gsonConvertor.gson
+    implementation deps.pagination.paging
+    testImplementation deps.kotlin.test
+    testImplementation deps.junit
+    testImplementation deps.androidx_test
+    testImplementation deps.coroutines.coroutinesTest
+    androidTestImplementation deps.atsl.ext_junit
+    androidTestImplementation deps.espresso.core
+    testImplementation 'org.mockito:mockito-core:4.0.0'
+    testImplementation "com.google.truth:truth:1.1.3"
+    testImplementation 'app.cash.turbine:turbine:0.7.0'
+}

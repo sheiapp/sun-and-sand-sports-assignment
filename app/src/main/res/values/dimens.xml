@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="error_text_size_18sp">18sp</dimen>
+    <dimen name="random_user_item_padding_8dp">8dp</dimen>
+    <dimen name="thumbnail_size_100dp">100dp</dimen>
+    <dimen name="user_name_font_size_16sp">16sp</dimen>
+    <dimen name="thumbnail_margin_6dp">6dp</dimen>
+    <dimen name="gender_text_size_14sp">14sp</dimen>
+    <dimen name="row_item_margin_vertical_12dp">12dp</dimen>
+    <dimen name="user_item_text_padding_start">16dp</dimen>
+    <dimen name="user_item_padding_8dp">8dp</dimen>
+    <dimen name="dp_0">0dp</dimen>
+    <dimen name="username_text_size_30sp">30sp</dimen>
+</resources>

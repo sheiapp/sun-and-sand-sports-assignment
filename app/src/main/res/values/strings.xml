@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">sun and sand sports assignment</string>
+    <string name="unknown_error">An unknown error occurred</string>
+    <string name="server_error">Couldn\'t reach the server. Check your internet connection</string>
+    <string name="no_results">No results 😓</string>
+    <string name="retry">Retry</string>
+    <string name="user_name_template">shaheer cs</string>
+    <string name="user_picture">user picture</string>
+    <string name="gender_template">Male</string>
+    <string name="city_name">City name</string>
+    <string name="city_name_template">Duabi</string>
+    <string name="state_name">State name</string>
+    <string name="country_name">Country name</string>
+    <string name="country_name_template">UAE</string>
+    <string name="user_age">Age</string>
+    <string name="user_age_template">28</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="mobile_number_template">+971582447970</string>
+    <string name="gender">Gender</string>
+    <string name="user_gender_template">male</string>
+</resources>
